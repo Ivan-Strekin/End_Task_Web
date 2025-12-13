@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Kiosk — Product Card</title>
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand" aria-label="Logo and name">
+        <img src="assets/icons/logo.ico" id="logo_header">
+        <a class="brand-name" href="index.html">Coffee House Kiosk</a>
+      </div>
+
+      <div class="header-actions header-actions--right">
+        <a class="icon-btn" href="index.html" aria-label="Back to menu">← Back to Menu</a>
+
+        <button id="cartBtn" class="cart-btn" type="button" aria-label="Open order" aria-expanded="false" aria-controls="cartDrawer">
+          <img src="assets/icons/notification.svg" class="cart-icon" aria-hidden="true">
+          <span class="cart-label">Order Status</span>
+          <span id="cartCount" class="badge" aria-label="Number of items">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <div class="container">
+      <h1 class="page-title" id="productTitle">Drink</h1>
+
+      <article class="product-view" aria-label="Product card">
+        <section class="product-hero" aria-label="Product photo">
+          <div id="productImage" class="product-image" role="img" aria-label="Product image"></div>
+        </section>
+
+        <section class="product-info" aria-label="Product settings">
+          <p class="muted" id="productDesc">Product description…</p>
+
+          <div class="options">
+            <fieldset class="fieldset">
+              <legend>Cup Size</legend>
+              <div class="chips" id="sizeChips" role="group" aria-label="Size selection">
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Extras</legend>
+              <div class="chips" id="extraChips" role="group" aria-label="Extras selection">
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Milk Type</legend>
+              <div class="chips" id="milkChips" role="group" aria-label="Milk selection">
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="buybar" aria-label="Purchase">
+            <div class="price" aria-label="Price">
+              <span class="price__value" id="productPrice">₹0</span>
+            </div>
+
+            <div class="qty" aria-label="Quantity">
+              <button class="icon-btn" type="button" id="qtyMinus" aria-label="Decrease quantity">−</button>
+              <output id="qtyValue" class="qty__value" aria-label="Current quantity">1</output>
+              <button class="icon-btn" type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+            </div>
+
+            <button id="addToCartBtn" class="btn btn-primary" type="button">Place Order</button>
+          </div>
+
+          <p class="hint">Settings and cart are saved in <code>localStorage</code>.</p>
+        </section>
+      </article>
+    </div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-label="Cart/order">
+      <div class="cart-drawer__head">
+        <h2 class="panel-title">Your Order</h2>
+        <button id="cartClose" class="icon-btn" type="button" aria-label="Close order">✕</button>
+      </div>
+
+      <div class="cart-drawer__body">
+        <ul id="cartItems" class="cart-items" aria-label="Order items">
+        </ul>
+
+        <div class="cart-summary" aria-label="Order summary">
+          <div class="row">
+            <span>Total items</span>
+            <strong id="cartTotalQty">0</strong>
+          </div>
+          <div class="row">
+            <span>Total</span>
+            <strong id="cartTotalPrice">₹0</strong>
+          </div>
+
+          <a class="btn btn-primary" href="index.html">Continue Shopping</a>
+          <button id="clearCartBtn" class="btn btn-ghost" type="button">Clear</button>
+        </div>
+      </div>
+    </aside>
+
+    <div id="overlay" class="overlay" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> Coffee House Kiosk</small>
+      <small class="muted">Product card</small>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
