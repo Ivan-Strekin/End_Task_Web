@@ -1,0 +1,8 @@
+[
+  {"id": 1, "name": "Cappuccino", "icon": "☕"},
+  {"id": 2, "name": "Latte", "icon": "🥛"},
+  {"id": 3, "name": "Americano", "icon": "🫘"},
+  {"id": 4, "name": "Espresso", "icon": "⚡"},
+  {"id": 5, "name": "Flat White", "icon": "🤍"}
+]
+

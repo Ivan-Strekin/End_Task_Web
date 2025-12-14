@@ -1,0 +1,9 @@
+[
+  {"id": 1, "name": "Cinnamon and Cocoa", "category": 1, "price": 99, "desc": "A single espresso shot poured into hot foamy milk, with the surface topped with mildly sweetened cocoa powder and drizzled with scrumptious caramel syrup.", "image": "1.png"},
+  {"id": 2, "name": "Drizzled with Caramel", "category": 1, "price": 99, "desc": "Delicate coffee with caramel topping.", "image": "2.png"},
+  {"id": 3, "name": "Bursting Blueberry", "category": 1, "price": 99, "desc": "Sweet berry flavor with coffee base.", "image": "3.png"},
+  {"id": 4, "name": "Dalgona Macha", "category": 2, "price": 150, "desc": "Latte with matcha and airy foam.", "image": "4.png"},
+  {"id": 5, "name": "Whipped chocolate", "category": 2, "price": 99, "desc": "Coffee with chocolate foam.", "image": "5.png"},
+  {"id": 6, "name": "Coco & Vanilla Cream", "category": 2, "price": 199, "desc": "Coconut and vanilla cream in a coffee drink.", "image": "6.png"}
+]
+

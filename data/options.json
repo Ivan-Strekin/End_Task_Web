@@ -1,0 +1,18 @@
+{
+  "sizes": [
+    {"id": 1, "name": "Short", "mult": 1.0},
+    {"id": 2, "name": "Tall", "mult": 1.2},
+    {"id": 3, "name": "Grande", "mult": 1.4},
+    {"id": 4, "name": "Venti", "mult": 1.6}
+  ],
+  "extras": [
+    {"id": 1, "name": "Sugar"},
+    {"id": 2, "name": "Milk"}
+  ],
+  "milks": [
+    {"id": 1, "name": "Oat Milk"},
+    {"id": 2, "name": "Soy Milk"},
+    {"id": 3, "name": "Almond Milk"}
+  ]
+}
+
